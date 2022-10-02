@@ -219,3 +219,4 @@ fabric.properties
 !.idea/runConfigurations
 
 demoqa_tests/tests/allure-results
+.env
