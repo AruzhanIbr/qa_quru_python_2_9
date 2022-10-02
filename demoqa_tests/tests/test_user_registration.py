@@ -3,7 +3,7 @@ from demoqa_tests.model.pages import registration_form
 from demoqa_tests.model.pages.registration_form import *
 from demoqa_tests.utils import turpl_to_string
 from demoqa_tests.utils.path import upload_picture
-from tests.test_data.users import elena
+from demoqa_tests.tests.test_data.users import elena
 
 
 @allure.label('owner', 'AruzhanIbr')

@@ -5,8 +5,8 @@ from selene.support.shared import browser
 from selene.support.shared.jquery_style import ss
 
 from demoqa_tests.model.controls import dropdown, modal
-from tests.test_data import users
-from tests.test_data.users import elena, Subject
+from demoqa_tests.tests import users
+from demoqa_tests.tests.test_data.users import elena, Subject
 
 state = browser.element('#state')
 

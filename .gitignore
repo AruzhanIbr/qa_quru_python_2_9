@@ -218,4 +218,4 @@ fabric.properties
 !.idea/codeStyles
 !.idea/runConfigurations
 
-tests/allure-results
+demoqa_tests/tests/allure-results
