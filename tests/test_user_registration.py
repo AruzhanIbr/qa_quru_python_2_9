@@ -48,8 +48,3 @@ def test_submit_student_registration_form():
                 ('State and City', f'{elena.state} {elena.city}')
             ],
         )
-    with allure.step('Attachments'):
-        attach.add_html(browser)
-        attach.add_screenshot(browser)
-        attach.add_logs(browser)
-        # utils.attach.add_video()
