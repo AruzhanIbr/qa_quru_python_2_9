@@ -7,6 +7,8 @@ from demoqa_tests.utils.path import upload_picture
 from tests.test_data.users import elena
 
 
+@allure.label('owner', 'AruzhanIbr')
+@allure.title('Successful fill form')
 def test_submit_student_registration_form():
     with allure.step('Открыть страницу регистрации'):
         given_opened_browser()
