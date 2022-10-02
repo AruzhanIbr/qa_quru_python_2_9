@@ -1,5 +1,6 @@
 import allure
 
+import utils
 from demoqa_tests.model.pages import registration_form
 from demoqa_tests.model.pages.registration_form import *
 from demoqa_tests.utils import turpl_to_string
@@ -51,3 +52,4 @@ def test_submit_student_registration_form():
         attach.add_html(browser)
         attach.add_screenshot(browser)
         attach.add_logs(browser)
+        # utils.attach.add_video()
