@@ -1,17 +1,15 @@
 import allure
-
-import utils
 from demoqa_tests.model.pages import registration_form
 from demoqa_tests.model.pages.registration_form import *
 from demoqa_tests.utils import turpl_to_string
 from demoqa_tests.utils.path import upload_picture
 from tests.test_data.users import elena
-from utils import attach
 
 
 @allure.label('owner', 'AruzhanIbr')
 @allure.title('Successful fill form')
 def test_submit_student_registration_form(setup_browser):
+    browser = setup_browser
     with allure.step('Открыть страницу регистрации'):
         given_opened_browser()
 
