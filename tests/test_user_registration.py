@@ -11,7 +11,7 @@ from utils import attach
 
 @allure.label('owner', 'AruzhanIbr')
 @allure.title('Successful fill form')
-def test_submit_student_registration_form():
+def test_submit_student_registration_form(setup_browser):
     with allure.step('Открыть страницу регистрации'):
         given_opened_browser()
 
