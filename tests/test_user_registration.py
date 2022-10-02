@@ -5,6 +5,7 @@ from demoqa_tests.model.pages.registration_form import *
 from demoqa_tests.utils import turpl_to_string
 from demoqa_tests.utils.path import upload_picture
 from tests.test_data.users import elena
+from utils import attach
 
 
 @allure.label('owner', 'AruzhanIbr')
@@ -46,3 +47,7 @@ def test_submit_student_registration_form():
                 ('State and City', f'{elena.state} {elena.city}')
             ],
         )
+    with allure.step('Attachments'):
+        attach.add_html(browser)
+        attach.add_screenshot(browser)
+        attach.add_logs(browser)
